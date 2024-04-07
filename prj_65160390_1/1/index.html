@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eisenhower Matrix Task Manager</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Eisenhower Matrix Task Manager</h1>
+  <form id="taskForm">
+    <input type="text" id="taskInput" placeholder="Add task...">
+    <select id="prioritySelect">
+      <option value="important-urgent">Important & Urgent</option>
+      <option value="important-not-urgent">Important & Not Urgent</option>
+      <option value="not-important-urgent">Not Important & Urgent</option>
+      <option value="not-important-not-urgent">Not Important & Not Urgent</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+  <div class="tasks-container">
+    <div class="task-list" id="importantUrgentTasks">
+      <h2>Important & Urgent</h2>
+      <ul id="importantUrgentList"></ul>
+    </div>
+    <div class="task-list" id="importantNotUrgentTasks">
+      <h2>Important & Not Urgent</h2>
+      <ul id="importantNotUrgentList"></ul>
+    </div>
+    <div class="task-list" id="notImportantUrgentTasks">
+      <h2>Not Important & Urgent</h2>
+      <ul id="notImportantUrgentList"></ul>
+    </div>
+    <div class="task-list" id="notImportantNotUrgentTasks">
+      <h2>Not Important & Not Urgent</h2>
+      <ul id="notImportantNotUrgentList"></ul>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
